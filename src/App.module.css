@@ -1,0 +1,13 @@
+body{
+  background-color:rgb(198, 198, 240);
+}
+.calculator{
+  margin: 5% 35% 0% 35%;
+  box-shadow: 0px 0px 10px 2px rgb(28, 28, 178);
+  width: 30%;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+
+
