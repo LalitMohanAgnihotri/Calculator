@@ -1,16 +1,55 @@
-# React + Vite
+🧮 Simple React Calculator
+Project Description
+This is a basic, single-page calculator application built using React. It demonstrates fundamental React concepts, including state management using the useState hook and component communication (passing data and functions between parent and child components).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Technologies Used
+React: For building the user interface.
 
-Currently, two official plugins are available:
+JavaScript: For core logic.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CSS Modules: For component-scoped styling.
 
-## React Compiler
+🛠️ Installation and Setup
+To get a local copy of this project up and running, follow these simple steps.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Prerequisites
+You need Node.js and npm (Node Package Manager) installed on your system.
 
-## Expanding the ESLint configuration
+Steps
+Clone the Repository:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Bash
+
+git clone [YOUR-REPO-URL-HERE]
+Navigate to the project directory:
+
+Bash
+
+cd simple-react-calculator
+Install Dependencies:
+
+Bash
+
+npm install
+Usage
+Starting the Application
+Once dependencies are installed, you can start the development server:
+
+Bash
+
+npm run dev
+The application should automatically open in your web browser, typically at http://localhost:3000.
+
+Core Logic Overview
+The main calculator logic resides in the App.jsx component:
+
+State: The display value (calVal) is managed by useState.
+
+Input: Number and operator buttons append their values to calVal.
+
+Clear: The 'AC' button resets calVal to an empty string.
+
+Calculation: The '=' button uses JavaScript's eval() function to compute the result of the expression string currently stored in calVal.
+
+⚠️ Security Note
+This example uses the built-in JavaScript eval() function for simplicity. While acceptable for closed, simple projects like this, eval() is generally avoided in production applications due to potential security vulnerabilities when handling complex or untrusted user input.
