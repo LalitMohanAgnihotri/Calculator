@@ -1,18 +1,22 @@
-.buttonContainer{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates a perfect 4-column grid */
+  gap: 10px;
+  padding: 10px;
 }
 
-.button{
-  margin: 3px;
-  width: 100px;
-  height:100px;
-  font-size:30px ;
-  background-color:rgb(198, 198, 240);
-  box-shadow:inset 0px 0px 10px 0.2px rgb(28, 28, 178);
-  color: white;
+.button {
+  aspect-ratio: 1; /* Keeps buttons perfectly circular */
+  font-size: 20px;
+  background-color: rgb(182, 182, 236);
+  color: #2c2c7c;
   border: none;
-  border-radius: 50px;
-  
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.button:active {
+  transform: scale(0.95); /* Adds a tactile "click" feel */
+  background-color: rgb(160, 160, 220);
 }
